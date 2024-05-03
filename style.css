@@ -13,6 +13,8 @@
    --azul: #002f52;
    --font-secundario: "Josefin Sans";
    --preto: #000;
+   --cinza: #474646;
+   --cinza-claro: #858585;
 }
 * {
     margin: 0;
