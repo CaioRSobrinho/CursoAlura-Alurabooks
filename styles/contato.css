@@ -1,37 +1,79 @@
 .contato {
-    background-color: var(--branco); /*cor de fundo do elemento*/
-    padding: 1em; /*espaço do elemento*/
+    background-color: var(--branco);
+    /*cor de fundo do elemento*/
+    padding: 1em;
+    /*espaço do elemento*/
 }
 
 .contato__titulo,
 .contato__texto {
-    background: var(--azul-degrade); /*cor de fundo do elemento*/
-    -webkit-background-clip: text; /*certeza que vai funcionar em todos os navegadores*/
-    -webkit-text-fill-color: transparent; /*certeza que vai funcionar em todos os navegadores*/
-    background-clip: text; /*coloca a cor no texto*/
+    background: var(--azul-degrade);
+    /*cor de fundo do elemento*/
+    -webkit-background-clip: text;
+    /*certeza que vai funcionar em todos os navegadores*/
+    -webkit-text-fill-color: transparent;
+    /*certeza que vai funcionar em todos os navegadores*/
+    background-clip: text;
+    /*coloca a cor no texto*/
 }
 
 .contato__titulo {
-    font-size: 18px; /*tamanho da fonte*/
-    font-weight: 500; /*peso da fonte*/
+    font-size: 18px;
+    /*tamanho da fonte*/
+    font-weight: 500;
+    /*peso da fonte*/
 }
 
 .contato__texto {
-    font-weight: 300; /*peso da fonte*/
-    margin: 1em 0; /*espaço cima/baixo e direita/esquerda*/
+    font-weight: 300;
+    /*peso da fonte*/
+    margin: 1em 0;
+    /*espaço cima/baixo e direita/esquerda*/
 }
 
 .contato__email {
-    padding: 1em; /*espaço que o item ocupa*/
-    border: 1px solid var(--azul); /*borda do item*/
-    border-radius: 24px; /*borda arredondada*/
-    width: 90%; /*tamanho que o item ocupa*/
-    color: var(--azul); /*cor do item*/
+    padding: 1em;
+    /*espaço que o item ocupa*/
+    border: 1px solid var(--azul);
+    /*borda do item*/
+    border-radius: 24px;
+    /*borda arredondada*/
+    width: 90%;
+    /*tamanho que o item ocupa*/
+    color: var(--azul);
+    /*cor do item*/
 }
 
 .contato__email::placeholder {
-    font-family: var(--font-principal); /* fonte que o texto do input vai possuir*/
-    color: var(--azul); /*cor do item*/
-    background: url("../imagens/email.svg") no-repeat; /*imagem de fundo*/
-    padding-left: 2em; /*tamanho que o item vai ocupar*/
+    font-family: var(--font-principal);
+    /* fonte que o texto do input vai possuir*/
+    color: var(--azul);
+    /*cor do item*/
+    background: url("../imagens/email.svg") no-repeat;
+    /*imagem de fundo*/
+    padding-left: 2em;
+    /*tamanho que o item vai ocupar*/
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
 }

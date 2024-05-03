@@ -1,30 +1,58 @@
 .topicos {
-    background: var(--azul-degrade); /*background gradiente dos tópicos*/
-    text-align: center; /*alinhamento dos itens centro*/
+    background: var(--azul-degrade);
+    /*background gradiente dos tópicos*/
+    text-align: center;
+    /*alinhamento dos itens centro*/
     padding: 1em 0;
 }
 
 .topicos__titulo {
-    color: var(--branco); /*mudar cor do objeto*/
-    font-weight: 300; /*peso da fonte*/
+    color: var(--branco);
+    /*mudar cor do objeto*/
+    font-weight: 300;
+    /*peso da fonte*/
     margin-bottom: 1em;
 }
 
 .topicos__lista {
-    display: flex; /*alinha os itens dentro de um container de forma flexivel e responsiva*/
-    flex-wrap: wrap;/*quebra de linha quando chega no final da tela*/
-    justify-content: center; /*centralizamos todos os itens*/
+    display: flex;
+    /*alinha os itens dentro de um container de forma flexivel e responsiva*/
+    flex-wrap: wrap;
+    /*quebra de linha quando chega no final da tela*/
+    justify-content: center;
+    /*centralizamos todos os itens*/
 }
 
 .topicos__item {
-    margin: 2em 0.5em; /*espaçamentos dos itens*/
+    margin: 2em 0.5em;
+    /*espaçamentos dos itens*/
 }
 
 .topicos__link {
-    color: var(--branco); /*mudar cor dos itens*/
-    padding: 1em; /*espaço que cada item vai ocupar*/
-    background-color: var(--laranja); /*cor de fundo de cada item*/
-    text-decoration: none; /*remove toda decoração*/
-    font-size: 14px; /*tamanho da fonte do texto*/
-    font-weight: 700; /*peso da fonte*/
+    color: var(--branco);
+    /*mudar cor dos itens*/
+    padding: 1em;
+    /*espaço que cada item vai ocupar*/
+    background-color: var(--laranja);
+    /*cor de fundo de cada item*/
+    text-decoration: none;
+    /*remove toda decoração*/
+    font-size: 14px;
+    /*tamanho da fonte do texto*/
+    font-weight: 700;
+    /*peso da fonte*/
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__item {
+        padding: 1.5em 0.75em;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
 }
