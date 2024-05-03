@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1200px) {
     .topicos {
         padding: 3em 20vw;
     }
